@@ -13,17 +13,23 @@
     "sources": "https://github.com/Michael-Long/Vanilla-Scoop"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT",
+  "icon": "assets/vanillascoop/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.fireworks.vanillascoop.VanillaScoop"
+    ],
+    "fabric-datagen": [
+      "net.fireworks.vanillascoop.VanillaScoopDataGenerator"
+    ],
+    "client": [
+      "net.fireworks.vanillascoop.VanillaScoopClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "vanillascoop.mixins.json"
   ],
 
   "depends": {
