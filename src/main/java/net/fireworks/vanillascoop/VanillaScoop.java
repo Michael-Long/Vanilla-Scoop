@@ -1,6 +1,7 @@
 package net.fireworks.vanillascoop;
 
 import net.fabricmc.api.ModInitializer;
+import net.fireworks.vanillascoop.block.ModBlocks;
 import net.fireworks.vanillascoop.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,5 +16,6 @@ public class VanillaScoop implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
